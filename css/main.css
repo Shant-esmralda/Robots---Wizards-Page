@@ -39,3 +39,38 @@ body {
     background-image: url('../assets/img/jungle\ level.jpg');
     background-size: cover;
 }
+
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #d5eebb;
+    border: none;
+}
+
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: #5f7a61;
+    transition: .5s;
+}
+
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
