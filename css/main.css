@@ -41,9 +41,9 @@ body {
 }
 
 .controls{
-    width: 100%;
+    width: 60%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-top: 20px;
@@ -86,4 +86,35 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 0;
     clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px rgba(61, 61, 61, 0.1);
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(61, 61, 61, 0.4);
+    }
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background: #d5eebb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.btn img{
+    width: 100%;
 }
