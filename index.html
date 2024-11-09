@@ -5,6 +5,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
 <title>
 music.shant-sf.com</title>
 <style>
@@ -12,14 +13,20 @@ music.shant-sf.com</title>
 </style>
 </head>
 <body>
-	<audio src="" id="audio"></audio>
-	<img class="logo" src="assets/img/R&W transparent.png" alt="">
+	<div class="row container-fluid">
 <center>
-	<span class="nes-text is-primary" style="font-family: 'Press Start 2P', cursive;">Primary</span>
-	<p>shants music blog</p>
-	<a class="nes-btn" href="#">Normal</a>
+	<div class="col-md-6">
+		<audio src="" id="audio"></audio>
+		<img class="logo" src="assets/img/R&W transparent.png" alt="">
+
+		<span class="nes-text is-primary" style="font-family: 'Press Start 2P', cursive;">Primary</span>
+		<p>shants music blog</p>
+		<a class="nes-btn" href="#">Normal</a>
+	</div>
 </center>
 
+<center>
+	<div class="col-md-6">
 <div class="music-player">
 	<div class="song-cover"></div>
 	<h1 class="song-name">Jungle Level</h1>
@@ -32,7 +39,9 @@ music.shant-sf.com</title>
 		<button class="btn forward-btn"><img src="assets/img/forward.png" alt=""></button>
 	</div>
 </div>
-
+</div>
+</center>
+</div>
 <script src="scripts/data.js"></script>
 <script src="scripts/app.js"></script>
 </body>
