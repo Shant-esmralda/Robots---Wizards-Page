@@ -15,7 +15,7 @@ const setMusic = (i) => {
     music.src = song.path;
 
     songName.innerHTML = song.name;
-    songCover.style.backgroundImage = "url('../assets/img/" + song.cover + "')";
+    songCover.style.backgroundImage = "url('./assets/img/" + song.cover + "')";
 }
 
 setMusic(0);
